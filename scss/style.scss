@@ -149,7 +149,8 @@ canvas { outline-style:none;}
     display:block;
   }
   .dat-gui-container {
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     top: 0px;
     display:block;
     position: relative;
@@ -158,5 +159,6 @@ canvas { outline-style:none;}
   }
   .animated-draggable{
     position: relative!important;
+    width: 100%!important;
   }
 }

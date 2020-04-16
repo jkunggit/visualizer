@@ -32,17 +32,16 @@ const DatGuiControl = () => {
   }
 
   const animatedDivRef = createRef()
-  const animateDatGui = !isMobile
-    ? useSpring({
-      from: { transform: 'scale(0)', position: 'absolute', width: '300px', top: '0px' },
-      to: dataState.showGuiControl ? { transform: 'scale(1)', display: 'block' } : { transform: 'scale(0)' },
-      onRest: () => {
-        if (!dataState.showGuiControl) {
-          animatedDivRef.current.style.display = 'none'
-        }
-      },
-      config: dataState.showGuiControl ? config.wobbly : { duration: 200, delay: 100 }
-    }) : null
+  const animateDatGui = useSpring({
+    from: { transform: 'scale(0)', position: 'absolute', width: '300px', top: '0px' },
+    to: dataState.showGuiControl ? { transform: 'scale(1)', display: 'block' } : { transform: 'scale(0)' },
+    onRest: () => {
+      if (!dataState.showGuiControl) {
+        animatedDivRef.current.style.display = 'none'
+      }
+    },
+    config: dataState.showGuiControl ? config.wobbly : { duration: 200, delay: 100 }
+  })
 
   const animateToggleBtn = useSpring({
     from: { transform: 'scale(0)' },

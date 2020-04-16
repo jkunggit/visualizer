@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "ignore": ["node_modes", ".next"],
+  "watch": ["server/**.*", "index.js"],
+  "ext": "js jsx json"
+}

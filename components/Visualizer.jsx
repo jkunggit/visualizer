@@ -2,7 +2,7 @@ import { Component } from 'react'
 import * as THREE from 'three'
 import { isBrowser, isMobile } from 'react-device-detect'
 
-import { VisualizerContext } from '../contexts/visualizerContext'
+import { VisualizerContext } from '../contexts/VisualizerContext'
 
 // can't load the es6 modules with
 let dynamicallyImportPackage = async () => {

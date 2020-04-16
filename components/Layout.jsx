@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import { isBrowser, isMobile } from 'react-device-detect'
+import { isMobile } from 'react-device-detect'
 
 import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
-import { VisualizerContext } from '../contexts/visualizerContext'
+import { VisualizerContext } from '../contexts/VisualizerContext.js'
 
 const Layout = props => {
   const showGuiControl = isMobile ? false : true

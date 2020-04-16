@@ -3,7 +3,7 @@ import DatGui, { DatBoolean, DatColor, DatNumber, DatString } from 'react-dat-gu
 import Draggable from 'react-draggable'
 import { isMobile } from 'react-device-detect'
 
-import { VisualizerContext } from '../contexts/visualizerContext'
+import { VisualizerContext } from '../contexts/VisualizerContext'
 import { useSpring, animated, config } from 'react-spring'
 
 const DatGuiControl = () => {

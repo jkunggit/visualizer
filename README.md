@@ -1,5 +1,5 @@
 # visualizer
-3D visualizer to edit scene, model properties. It is in working progress.
+3D visualizer to edit scene and model properties. It is in working progress.
 
 ## Technologies
 

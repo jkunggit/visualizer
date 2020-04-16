@@ -15,5 +15,5 @@
 - [Standard](https://standardjs.com/)
 - [SASS](https://github.com/sass/dart-sass)
 
-## Deployment preview:
+## Deployment Preview:
 https://visualizer.jkunggit.now.sh

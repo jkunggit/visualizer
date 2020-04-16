@@ -6,14 +6,14 @@
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
-- [react-dat-gui](https://github.com/claus/react-dat-gui)
-- [react-device-detect](https://www.npmjs.com/package/react-device-detect)
-- [react-draggable](https://www.npmjs.com/package/react-draggable)
-- [react-spring](https://www.react-spring.io/)
-- [three](https://threejs.org/)
+- [React-dat-gui](https://github.com/claus/react-dat-gui)
+- [React-device-detect](https://www.npmjs.com/package/react-device-detect)
+- [React-draggable](https://www.npmjs.com/package/react-draggable)
+- [React-spring](https://www.react-spring.io/)
+- [Three](https://threejs.org/)
 - [Babel](https://babeljs.io/)
 - [Standard](https://standardjs.com/)
-- [Sass](https://github.com/sass/dart-sass)
+- [SASS](https://github.com/sass/dart-sass)
 
 ## deployment preview:
 https://visualizer.jkunggit.now.sh

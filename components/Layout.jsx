@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { isMobile } from 'react-device-detect'
 
 import Head from 'next/head'
 import Header from './Header'
@@ -7,13 +6,12 @@ import Footer from './Footer'
 import { VisualizerContext } from '../contexts/VisualizerContext.js'
 
 const Layout = props => {
-  const showGuiControl = isMobile ? false : true
   const initialState = {
     scene: null,
     composer: null,
     renderer: null,
     camera: null,
-    showGuiControl: showGuiControl,
+    showGuiControl: true,
     properties: {
       text: 'input',
       bool: true,

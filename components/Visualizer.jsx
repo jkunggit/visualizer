@@ -24,7 +24,6 @@ class Visualizer extends Component {
   
   async componentDidMount () {
     const { setDataState } = this.context
-    console.log(dataState)
 
     // get the current height and width of the div
     this.width = this.mount.clientWidth
@@ -89,7 +88,6 @@ class Visualizer extends Component {
         dataState.composer.render();
       }
     }
-    console.log('fuck', dataState.three)
     animate()
   }
 

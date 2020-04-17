@@ -77,7 +77,7 @@ const DatGuiControl = () => {
   let sceneMeshes = []
   if (dataState.scenes) {
     sceneNames = dataState.scenes.sceneNames
-    const scene = dataState.scenes.scene()
+    const scene = dataState.scenes.scene
     sceneMeshes = scene.meshNames
   }
 
@@ -99,7 +99,7 @@ const DatGuiControl = () => {
             <DatGui data={dataState.properties} onUpdate={handleUpdate}>
               <DatSelect path='activeScene' label='Scene' options={sceneNames} />
               <DatSelect path='activeSceneMesh' label='Object Mesh' options={sceneMeshes} />
-              <DatColor path='color' label='color' />
+              <DatColor path='color' label='Color' />
               <DatFolder title='Toggle Settings'>
                 <DatBoolean path='showOutline' label='Show Active Outline' />
               </DatFolder>

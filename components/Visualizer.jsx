@@ -33,7 +33,7 @@ class Visualizer extends Component {
 
     window.addEventListener('resize', this.handleResize, false)
 
-    const camera = new THREE.PerspectiveCamera(75, this.width / this.height, 0.1, 1000)
+    const camera = new THREE.PerspectiveCamera(75, this.width / this.height, 0.1, 3000)
     camera.position.z = 5
 
     const renderer = new THREE.WebGLRenderer()
@@ -64,6 +64,18 @@ class Visualizer extends Component {
     sphere.name = 'mySphere'
     sphere.position.set(2,0,0)
     scene.add( sphere );
+
+
+    var light = new THREE.PointLight( 0xff0000, 1, 100 );
+    light.position.set( 50, 50, 50 );
+    scene.add( light );
+    
+    var plane = new THREE.Mesh( new THREE.PlaneGeometry( 2000, 2000, 8, 8 ), new THREE.MeshBasicMaterial( { color: 0x522d02, opacity: 0.25 } ) );
+    plane.visible = true;
+    plane.position.set(0,-200,0)
+    plane.rotateX( - Math.PI / 2);
+    scene.add( plane );
+
 
     scenes.add(scene)
 

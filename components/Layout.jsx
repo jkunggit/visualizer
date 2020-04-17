@@ -9,7 +9,6 @@ const Layout = props => {
   const initialState = {
     activeComposer: null, // object
     scenes: null, // array
-    composers: null, // array
     renderer: null, // object
     showGuiControl: true,
     // gui control properties

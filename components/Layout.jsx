@@ -7,15 +7,18 @@ import { VisualizerContext } from '../contexts/VisualizerContext.js'
 
 const Layout = props => {
   const initialState = {
-    scene: null,
-    composer: null,
-    renderer: null,
-    camera: null,
+    activeComposer: null, // object
+    scenes: null, // array
+    composers: null, // array
+    renderer: null, // object
     showGuiControl: true,
+    // gui control properties
     properties: {
-      text: 'input',
-      bool: true,
-      color: '#2FA1D6'
+      activeScene: '', // default selected
+      activeSceneMesh: '',
+      color: '',
+      // toggle settings
+      showOutline: true
     }
   }
   const [data, setData] = useState(initialState)

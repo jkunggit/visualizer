@@ -1,4 +1,4 @@
-# visualizer
+# Visualizer
 3D visualizer to edit scene and model properties. It is in working progress.
 
 ## Technologies

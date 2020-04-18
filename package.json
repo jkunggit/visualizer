@@ -20,8 +20,9 @@
     "react-dom": "^16.13.1",
     "react-draggable": "^4.3.1",
     "react-spring": "^8.0.27",
+    "react-stats-zavatta": "0.0.6",
     "sass": "^1.26.3",
-    "three": "^0.115.0"
+    "three": "https://github.com/jkunggit/three.js.git"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0"

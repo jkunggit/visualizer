@@ -15,6 +15,10 @@ const Layout = props => {
     properties: {
       activeScene: '', // default selected
       activeSceneMesh: '',
+      activeSceneLight: '',
+      lightIntensity: '',
+      lightDistance: '',
+      lightDecay: '',
       color: '',
       // toggle settings
       showOutline: true

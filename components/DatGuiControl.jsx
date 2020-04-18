@@ -25,6 +25,18 @@ const DatGuiControl = () => {
       scenes.updateMeshColor(newData.color)
     }
 
+    if (dataState.properties.lightIntensity !== newData.lightIntensity) {
+      scenes.updateLightProperty('power', newData.lightIntensity)
+    }
+
+    if (dataState.properties.lightDistance !== newData.lightDistance) {
+      scenes.updateLightProperty('distance', newData.lightDistance)
+    }
+
+    if (dataState.properties.lightDecay !== newData.lightDecay) {
+      scenes.updateLightProperty('decay', newData.lightDecay)
+    }
+
     if (dataState.properties.activeScene !== activeScene) {
       sceneChanged = true
     }
@@ -75,10 +87,12 @@ const DatGuiControl = () => {
 
   let sceneNames = []
   let sceneMeshes = []
+  let lightNames = []
   if (dataState.scenes) {
     sceneNames = dataState.scenes.sceneNames
     const scene = dataState.scenes.scene
     sceneMeshes = scene.meshNames
+    lightNames = scene.lightNames
   }
 
   return (
@@ -98,8 +112,14 @@ const DatGuiControl = () => {
             </header>
             <DatGui data={dataState.properties} onUpdate={handleUpdate}>
               <DatSelect path='activeScene' label='Scene' options={sceneNames} />
-              <DatSelect path='activeSceneMesh' label='Object Mesh' options={sceneMeshes} />
-              <DatColor path='color' label='Color' />
+              <DatSelect path='activeSceneMesh' label='Scene Mesh' options={sceneMeshes} />
+              <DatColor path='color' label='Mesh Color' />
+              <DatSelect path='activeSceneLight' label='Lights' options={lightNames} />
+              <DatFolder title='Light Settings'>
+                <DatNumber path='lightIntensity' label='Power' min={0} max={1000} step={1} />
+                <DatNumber path='lightDistance' label='Distance' min={0} max={2000} step={1} />
+                <DatNumber path='lightDecay' label='Decay' min={0} max={100} step={1} />
+              </DatFolder>
               <DatFolder title='Toggle Settings'>
                 <DatBoolean path='showOutline' label='Show Active Outline' />
               </DatFolder>

@@ -38,6 +38,12 @@ canvas { outline-style:none;}
   font-size: 0;
   height: calc(100vh - #{$header-nav-area-height + $footer-area-height}); 
   width: 100%;
+  position:relative;
+  .stats-container {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+  }
   .visualizer {
     height: 100%;
     width: 100%;

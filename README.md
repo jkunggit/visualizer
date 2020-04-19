@@ -1,5 +1,5 @@
 # Visualizer
-3D visualizer to edit scene and model properties. It is in working progress.
+3D React Visualizer to edit scene and model properties. It is in working progress.
 
 ## Technologies
 
